@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <div id="viewHightScore"><a>View high score</a></div>
+      <div><a id=viewHighScore href="#viewHighScore">View high score</a></div>
       <div id="countdown">Time :</div>
     </header>
 
@@ -35,6 +35,7 @@
 
       <div id="final-container" style="display:none">
         <h1>All Done</h1>
+        <div id="showScore"></div>
         <form>
             <div class="initial">
               <label for="initial">Initial:</label>
@@ -44,6 +45,14 @@
         </form>
       </div>
       <div id="result" style="display:none"></div>
+      <div id="HighScore-container" style="display:none">
+        <hi>High Score</hi>
+        <ul id="highScore">
+
+        </ul>
+        <button id="goBack">Go back</button>
+        <button id="clearHighScore">clear high score</button>
+      </div>
     </main>
 
     <footer>
