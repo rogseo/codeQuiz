@@ -17,7 +17,7 @@ SO THAT I can gauge my progress compared to my peers
 * It is done when a timer starts(75s) and I am presented with a question.
 * When I answer a question, I am presented with another question.
 * When I answer a question incorrectly, time is subtracted 10s from the clock.
-* If All questions are answered or the timer reaches, the game is over.
+* If All questions are answered or the timer reaches 0, the game is over.
 * When the game is over, the score is displayed and I can save my initials and my score to the local storage.
 * The score is equal to an amount of time left.
 * You deleted stored date by clicking "clear high score" button.
