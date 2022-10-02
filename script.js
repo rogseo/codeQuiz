@@ -154,7 +154,7 @@ function countdown() {
   var timeInterval = setInterval(function () {
 
     elm_countdown.textContent = "Time: " + timeLeft;
-    timeLeft--;
+    
     //When View High Score is clicked, quiz automatically ends
     if(timeLeft>0 && index<(Questions.length-1) && (isStart===false)){
       clearInterval(timeInterval);
@@ -162,6 +162,9 @@ function countdown() {
     else if(timeLeft <= 0 || isStart===false) {
       clearInterval(timeInterval);
       endQuiz();
+    }
+    else{
+      timeLeft--;
     }
   }, 1000);
 }

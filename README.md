@@ -1,13 +1,7 @@
 # codeQuiz
 
+Build a timed quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by Javascript code.
 
-## Your Task
-
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
-
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
-
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
 
 ## User Story
 
@@ -19,23 +13,28 @@ SO THAT I can gauge my progress compared to my peers
 
 ## Acceptance Criteria
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-score is equal to a amount of time left.
-```
+* It is done When I am taking a code quiz by clicking the start button.
+* It is done when a timer starts(75s) and I am presented with a question.
+* When I answer a question, I am presented with another question.
+* When I answer a question incorrectly, time is subtracted 10s from the clock.
+* If All questions are answered or the timer reaches, the game is over.
+* When the game is over, the score is displayed and I can save my initials and my score to the local storage.
+* The score is equal to an amount of time left.
+* You deleted stored date by clicking "clear high score" button.
+
+
 
 ## Mock-Up
 
 The following animation demonstrates the application functionality:
+First page of Quiz. you can start quiz by clicking start or you can see previous high score by clicking "view high score".
+![first page of quiz](./assets/images/Code-Quiz.png)
+When you click start button, the Quiz starts and display questions. A timer starts once you starts the quiz.
+![quiz pages](./assets/images/Code-Quiz%20(2).png)
+When you finished all questions, you can save your initial and score.
+![finished pages](./assets/images/Code-Quiz%20(5).png)
+Your score is saved to local storage and displayed.
+![high score pages](./assets/images/Code-Quiz%20(7).png)
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+## Deployed github
+https://rogseo.github.io/codeQuiz/
