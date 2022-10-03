@@ -26,8 +26,7 @@ SO THAT I can gauge my progress compared to my peers
 
 ## Mock-Up
 
-The following animation demonstrates the application functionality:
-First page of Quiz. you can start quiz by clicking start or you can see previous high score by clicking "view high score".
+First page of Quiz. you can start the quiz by clicking start button or you can see previous high score by clicking "view high score".
 ![first page of quiz](./assets/images/Code-Quiz.png)
 When you click start button, the Quiz starts and display questions. A timer starts once you starts the quiz.
 ![quiz pages](./assets/images/Code-Quiz%20(1).png)
