@@ -30,7 +30,7 @@ The following animation demonstrates the application functionality:
 First page of Quiz. you can start quiz by clicking start or you can see previous high score by clicking "view high score".
 ![first page of quiz](./assets/images/Code-Quiz.png)
 When you click start button, the Quiz starts and display questions. A timer starts once you starts the quiz.
-![quiz pages](./assets/images/Code-Quiz%20(2).png)
+![quiz pages](./assets/images/Code-Quiz%20(1).png)
 When you finished all questions, you can save your initial and score.
 ![finished pages](./assets/images/Code-Quiz%20(5).png)
 Your score is saved to local storage and displayed.

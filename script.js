@@ -1,3 +1,4 @@
+// Array of Questions and Answers
 const Questions = [{
   id: 0,
   q: "Commonly used data types DO Not Include ?",
@@ -175,9 +176,6 @@ elm_submit.addEventListener("click",function(event){
   event.preventDefault();
   const saveInitial=document.getElementById("initial");
 
-  if (saveInitial.value === undefined) {
-     saveInitial.value="N/A";
-  }
 
   const finalContainer=document.getElementById("final-container");
   const viewHighScore=document.getElementById("HighScore-container");
@@ -195,6 +193,13 @@ elm_submit.addEventListener("click",function(event){
 
 function storeHighScore(){
   const saveInitial=document.getElementById("initial");
+
+  if(saveInitial.value===""){
+    console.log("empty");
+    return;
+  }
+  console.log("Exe");
+
   var highScore={
     initial:saveInitial.value.toUpperCase(),
     score:timeLeft}
@@ -205,18 +210,16 @@ function storeHighScore(){
 
 function renderHighScore(){
   const elm_highScore=document.querySelector("#highScore");
-  elm_highScore.innerHTML = "";
-  // var storedHighScores = JSON.parse(localStorage.getItem("highScores"));
-  // if (storedHighScores !== null) {
-  //        highScores = storedHighScores;
-  //    }
-  // TODO: Describe the functionality of the following `for` loop.
+  elm_highScore.innerHTML = ""; //clear list to rewrite
+  
+
   for (var i = 0; i < highScores.length; i++) {  
     var highScore = highScores[i];
     var li = document.createElement("li");
     var str=`Initial: ${highScore.initial}- Score: ${highScore.score}`;
     li.textContent =str;
     elm_highScore.appendChild(li);}
+    console.log(i);
 
 }
 
@@ -230,8 +233,7 @@ function init() {
   if (storedHighScores !== null) {
     highScores = storedHighScores;
   }
-  // TODO: Describe the purpose of the following line of code.
-  renderHighScore();
+  
 }
 
 const elm_HighScore=document.querySelector("#HighScore-container");
@@ -241,6 +243,7 @@ elm_HighScore.addEventListener("click",function(event){
     event.preventDefault();
     highScores=[];
     localStorage.setItem("highScores",JSON.stringify(highScores));
+    
     renderHighScore();
     
   }
@@ -270,7 +273,7 @@ viewHighScore.addEventListener("click",function(event){
   result.setAttribute("style","display:none");
   finalContainer.setAttribute("style","display:none");
   viewHighScore.setAttribute("style","display:block");
-  storeHighScore();
+  //storeHighScore();
   renderHighScore();
 
 });
