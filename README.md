@@ -20,8 +20,8 @@ SO THAT I can gauge my progress compared to my peers
 * If All questions are answered or the timer reaches 0, the game is over.
 * When the game is over, the score is displayed and I can save my initials and my score to the local storage.
 * The score is equal to an amount of time left.
-* You deleted stored date by clicking "clear high score" button.
-
+* You can delete the stored date by clicking "clear high score" button.
+* You can see the list of high scores anytime. When you hit "View high Score" during the quiz, the quiz will end.
 
 
 ## Mock-Up

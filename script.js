@@ -89,8 +89,7 @@ function showNextQuestion() {
   }
 
  }
-//Options Event Lister
-
+//When clicking one of the options buttons.
 var elm_answerContainer=document.getElementById("answer-container");
 elm_answerContainer.addEventListener("click", function(event){
   
@@ -115,17 +114,14 @@ elm_answerContainer.addEventListener("click", function(event){
 function endQuiz() {
 
   const elm_quizContainer=document.getElementById("quiz-container");
-  elm_quizContainer.setAttribute("style","display:none");
-
   const elm_finalResult=document.getElementById("final-container");
-  elm_finalResult.setAttribute("style", "display: block");
   const showScore=document.getElementById("showScore");
 
-
+  elm_quizContainer.setAttribute("style","display:none");
+  elm_finalResult.setAttribute("style", "display: block");
   var tag = document.createElement("p");
   // Adds text content to created tag
-  tag.textContent = "Your Score : " + timeLeft ;
-  
+  tag.textContent = "Your Score : " + timeLeft ;  
   // Appends tag as child 
   showScore.appendChild(tag);
 }
@@ -170,13 +166,11 @@ function countdown() {
   }, 1000);
 }
 
-
+//Add Event for click "submit" button
 const elm_submit=document.getElementById("submit");
 elm_submit.addEventListener("click",function(event){
   event.preventDefault();
   const saveInitial=document.getElementById("initial");
-
-
   const finalContainer=document.getElementById("final-container");
   const viewHighScore=document.getElementById("HighScore-container");
   const result=document.getElementById("result");
@@ -227,9 +221,7 @@ init();
 
 function init() {
   console.log("init happen");
-  // TODO: What is the purpose of the following line of code?
   var storedHighScores = JSON.parse(localStorage.getItem("highScores"));
-  // TODO: Describe the functionality of the following `if` statement.
   if (storedHighScores !== null) {
     highScores = storedHighScores;
   }
