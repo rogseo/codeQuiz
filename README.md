@@ -5,13 +5,12 @@ Build a timed quiz with multiple-choice questions. This app will run in the brow
 
 ## Description
 
-```
 This App will ask 5 questions with 4 options of answers. The time is given for 75s and score is equal to the time left.
 When you answer incorrectly, time is subtracted 10s from the clock.
 When you finish all questions, you are presented with a score and you can save your initial and score.
 You can gauge your progress compared to my peers.
 
-```
+
 
 ## Acceptance Criteria
 
