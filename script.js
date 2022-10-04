@@ -31,21 +31,21 @@ const Questions = [{
 },
 {
   id: 3,
-  q: "Commonly used data types DO Not Include ?",
-  a: [{ text: "1. strings", isCorrect: false },
-  { text: "2. booleans", isCorrect: false },
-  { text: "3. alert", isCorrect: true },
+  q: "The _______ type refers to a compound value where you can set properties that each holds their own values of any type?",
+  a: [{ text: "1. Object", isCorrect: true },
+  { text: "2. array", isCorrect: false },
+  { text: "3. list", isCorrect: false },
   { text: "4. numbers", isCorrect: false }
   ]
 
 },
 {
   id: 4,
-  q: "The condition in an if/ else statement is enclosed with ______.",
-  a: [{ text: "1. quotes", isCorrect: false },
-  { text: "2. curly brackets", isCorrect: true },
-  { text: "3. parenthesis", isCorrect: false },
-  { text: "4. square brackets", isCorrect: false }
+  q: "What is a function which is a property of an object",
+  a: [{ text: "1. function", isCorrect: false },
+  { text: "2. method", isCorrect: true },
+  { text: "3. argument", isCorrect: false },
+  { text: "4. parameter", isCorrect: false }
   ]
 
 }
@@ -203,7 +203,7 @@ function storeHighScore(){
 }
 
 function renderHighScore(){
-  const elm_highScore=document.querySelector("#highScore");
+  const elm_highScore=document.getElementById("highScore");
   elm_highScore.innerHTML = ""; //clear list to rewrite
   
 
